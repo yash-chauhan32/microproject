@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>unlockEdu - Home</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #8e44ad, #4a6cf7);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #4a6cf7;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        nav a:hover {
+            color: #2c3e50;
+        }
+
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: #4a6cf7;
+            transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            margin: auto;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .fun-content-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px; /* Padding for mobile view */
+        }
+       
+        .fun-title {
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+            color: #3b59df;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .fun-card {
+            width: 300px;
+            min-width: 280px;
+            border: 1px solid #e0e0e0;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            text-align: center;
+        }
+        .fun-card:hover {
+            transform: translateY(-5px) rotate(3deg);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+       
+        .card-content {
+            font-size: 18px;
+            color: #666;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+
+        .card-source {
+            font-size: 13px;
+            color: #999;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #2c3e50;
+            color: #bdc3c7;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            header {
+                padding: 30px 10px;
+            }
+            nav a {
+                font-size: 14px;
+                margin: 0 10px;
+            }
+            .fun-card {
+                width: 100%;
+                min-width: 0;
+            }
+            .fun-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>unlockEd - Free Learning Portal</h1>
+        <p>Your pathway to knowledge — Explore our free courses</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="sdg.html">SDG-4</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Fun and Light Content Section -->
+    <section class="fun-content-container">
+
+        <h2 class="fun-title">🧠 Your Daily Dose of Awesome Trivia! 🚀</h2>
+
+        <!-- Fun Fact Card 1: Trivia -->
+        <div class="fun-card" style="border-left: 5px solid #e67e22;">
+            <div class="card-icon">💡</div>
+            <h3>Brain Spark: Honey</h3>
+            <p class="card-content">A jar of honey can last virtually forever. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible!</p>
+            <p class="card-source">#FunFact</p>
+        </div>
+
+        <!-- Fun Fact Card 3: Random Joke -->
+        <div class="fun-card" style="border-left: 5px solid #2ecc71;">
+            <div class="card-icon">🤣</div>
+            <h3>Quick Laugh</h3>
+            <p class="card-content">Why don't scientists trust atoms?</p>
+            <p class="card-content">Because they make up everything!</p>
+            <p class="card-source">#ScienceJokes</p>
+        </div>
+
+        <!-- Fun Fact Card 4: Inspirational Quote -->`
+        <div class="fun-card" style="border-left: 5px solid #8e44ad;">
+            <div class="card-icon">✨</div>
+            <h3>Inspiration Corner</h3>
+            <p class="card-content">"The journey of a thousand miles begins with a single step."</p>
+            <p class="card-content">What small step are you taking today towards a big goal?</p>
+            <p class="card-source">— Lao Tzu</p>
+        </div>
+       
+    </section>
+
+    <footer>
+        &copy; 2025 unlockEd | Powered by curiosity
+    </footer>
+
+</body>
+</html>
