@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SDG 4 - Quality Education - unlockEdu</title>
+
+<style>
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+        background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        color: #333;
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        background: linear-gradient(to right, #8e44ad, #4a6cf7);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(74, 108, 247, 0.3);
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
+    header h4 {
+        font-weight: 400;
+        opacity: 0.9;
+    }
+
+    /* Navigation Bar */
+    nav {
+        background: white;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        position: relative;
+        z-index: 10;
+    }
+
+    nav a {
+        color: #4a6cf7;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px;
+        font-size: 18px;
+        transition: color 0.3s ease;
+        position: relative;
+    }
+
+    nav a:hover {
+        color: #2c3e50;
+    }
+   
+    nav a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #4a6cf7;
+        transition: width 0.3s;
+        margin: auto;
+    }
+   
+    nav a:hover::after {
+        width: 100%;
+    }
+
+    /* Main Layout */
+    .container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+        .content-section, .grid-section {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        opacity: 0;
+        animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .content-section {
+        background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+    }
+
+    .content-section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+        color: #4a6cf7;
+        margin-bottom: 15px;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    h3 {
+        color: #333;
+        margin: 15px 0;
+        font-size: 22px;
+    }
+
+    p {
+        margin-bottom: 15px;
+        color: #555;
+        font-size: 18px;
+    }
+
+    .highlight {
+        color: #8e44ad;
+        font-weight: bold;
+    }
+
+    .sdg-red-text {
+        color: #C5192D;
+        font-weight: bold;
+    }
+
+    .sdg-badge {
+        background-color: #C5192D;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.8em;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+
+       .grid-section {
+        display: flex;
+        gap: 20px;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        animation-delay: 0.3s;
+    }
+
+    .target-card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        flex: 1;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        transition: transform 0.3s;
+        border-top: 5px solid #4a6cf7;
+    }
+
+    .target-card.main-focus {
+        border-top: 5px solid #C5192D;     }
+
+    .target-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .commitment-list {
+        list-style: none;
+    }
+
+    .commitment-list li {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: #555;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 25px;
+        background-color: #2c3e50;
+        color: #bdc3c7;
+        margin-top: auto;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .grid-section {
+            flex-direction: column;
+        }        
+        header h1 {
+            font-size: 32px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SDG 4: Quality Education</h1>
+  <h4>Ensuring inclusive and equitable quality education for all</h4>
+</header>
+
+<nav>
+        <a href="home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="sdg.html">SDG-4</a>
+        <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+ 
+    <div class="content-section">
+    <h2><span class="sdg-badge">SDG 4</span> The Global Mission</h2>
+    <p>At <strong>Personal Learning Hub</strong>, our core operations are directly aligned with the United Nations Sustainable Development Goal 4.</p>
+   
+    <p>This goal aims to ensure inclusive and equitable quality education and promote lifelong learning opportunities for all. We believe that <span class="highlight">education is a fundamental human right</span>, not a privilege reserved for the wealthy.</p>
+   
+    <p style="margin-top: 20px; font-style: italic; border-left: 4px solid #C5192D; padding-left: 15px;">
+        "By 2030, ensure that all girls and boys get complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes. " <b> ~SDG-4, Target - 1</b>
+    </p>
+  </div>
+
+   <div class="grid-section">
+   
+      <div class="target-card">
+      <span style="font-size: 40px;">🔬</span>
+      <h3>STEM Innovation</h3>
+      <p class="highlight">Science & Tech Focus</p>
+      <p>We simplify complex concepts in Science, Technology, Engineering, and Math to foster the next generation of innovators and problem solvers.</p>
+    </div>
+
+      <div class="target-card">
+      <span style="font-size: 40px;">🎨</span>
+      <h3>Creative Arts</h3>
+      <p class="highlight">Expression & Design</p>
+      <p>Nurturing creativity through free courses in digital art, writing, and music, because imagination is just as important as logic.</p>
+    </div>
+
+    <div class="target-card">
+      <span style="font-size: 40px;">💼</span>
+      <h3>Career Readiness</h3>
+      <p class="highlight">Future Skills</p>
+      <p>Bridging the gap between academia and industry with soft skills training, resume building, and interview preparation modules.</p>
+    </div>
+
+  </div>
+
+    <div class="content-section" style="animation-delay: 0.6s;">
+    <h2>🚀 How We Contribute</h2>
+    <p>We are actively working towards <strong>Topic 1 (Quality Education)</strong> through specific initiatives:</p>
+   
+    <ul class="commitment-list">
+        <li><strong>Zero Cost Model:</strong> All our video lectures, notes, and quizzes are 100% free forever.</li>
+        <li><strong>Open Access:</strong> No credit cards, no paywalls, and no premium tiers. Just learning.</li>
+        <li><strong>Community Tutoring:</strong> We connect senior students with juniors for peer-to-peer mentorship.</li>
+        <li><strong>Localized Content:</strong> Developing content in regional languages to bridge the understanding gap.</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 unlockEd | Supporting the UN 2030 Agenda.
+</footer>
+</body>
+</html>
